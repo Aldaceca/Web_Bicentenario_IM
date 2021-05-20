@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="anim_bg.css">
     <link rel="stylesheet" href="anim_icon.css">
     <link rel="stylesheet" href="estilotimeline.css">
-    <link rel="stylesheet" href="anim_timeline.css">
+ 
     <link rel="stylesheet" href="estilo2001.css">
     <link rel="stylesheet" href="estiloregistro.css">
-    <link rel="stylesheet" href="Egresados.css">
+
     <link rel="icon" href="imagenes/LogoPestaña.ico">
     <link rel="stylesheet" href="./app.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
@@ -66,50 +66,7 @@
         </div>
         <!-- FIN Menu ezquierdo -->
 
-        <div class="flotante1">
-            <input type="checkbox" id="openmenu2">
-            <label for="openmenu2"><img class="pop2" src="imagenes/botonlogin.png"></label>
-            <div id="menu-pane2">
-                <div>
-                    <div id="muestra" class="alert alert-primary">
-
-                        <div class="d-flex justify-content-center bot2"><a class="reg" onclick="location.href='autenticacion.html'">REGISTRARSE</a></div>
-                        <div class="sep"></div>
-                        <div class="d-flex justify-content-center bot2">
-                            <a class="reg" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                            INICIAR SESION
-                        </a>
-
-                        </div>
-                        <div class="collapse" id="collapseExample">
-                            <div class=" card card-body d-flex align-items-center">
-                                <div class="separadores"></div>
-                                <div>
-                                    <a class=" btn btn-lg btn-google btn-block text-uppercase btn-outline" id="google" href="#"><img src="https://img.icons8.com/color/16/000000/google-logo.png"> INICIAR SESION</a>
-                                </div>
-                                <div class="separadores"></div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control ses" id="emailnuevo" placeholder="Correo">
-                                </div>
-                                <div class="separadores3"></div>
-                                <div class="form-group">
-                                    <input type="password" class=" form-control ses" placeholder="Contraseña" id="pass">
-                                </div>
-                                <div class="separadores"></div>
-                                <div class="btn01 d-flex justify-content-around">
-                                    <button class="btn btn-primary rounded-pill" onclick="inicio()">INICIAR
-                                    SESION</button>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="alert alert-primary " role="alert" id="sesion"></div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
+       
 
         <main role="main">
             <!-- JUMBOTRON -->
@@ -121,8 +78,7 @@
                     </h2>
                     <p>
                         <div class="row paddtop2"></div>
-                        <a class="btn btn-primary btn-lg" href="create.html" role="button">Crear Publicacion &raquo;</a  
-              >
+                        <a class="btn btn-primary btn-lg" id="crear" href="create.html" role="button">Crear Publicacion &raquo;</a>
             </p>
           </div>
         </div>
@@ -139,7 +95,10 @@
   
       <!-- Firebase -->     
       <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
       <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-storage.js"></script>
   
       <!-- Bootstrap -->
       <script
@@ -160,8 +119,7 @@
   
       <script src="app.js"></script>
 
-    
-        
+
     </div>
 </div>
 </body>
