@@ -1,0 +1,94 @@
+html {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.contenedor {
+    min-height: 100vh;
+}
+
+.q {
+    max-width: 55px;
+    transition: transform .2s;
+}
+
+.q:hover {
+    transform: scale(1.1);
+}
+
+.iz {
+    padding-top: 2%;
+    background-color: #326A8C;
+    text-align: center;
+    color: #ffffff;
+}
+
+.separado {
+    height: 260px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 60px;
+    color: white;
+}
+
+h3:hover {
+    color: blue;
+}
+
+.dere {
+    background-color: #242327;
+    padding-top: 17%;
+}
+
+.i {
+    display: flex;
+    justify-content: space-around;
+}
+
+.d {
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.ig {
+    max-width: 247px;
+    max-height: 247px;
+    transition: transform .2s;
+}
+
+.ig:hover {
+    transform: scale(1.1);
+}
+
+.int {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.log {
+    border-top: solid #ffffff 5px;
+    width: 250px;
+}
+
+.rol:hover {
+    cursor: pointer;
+}
+
+.rola:hover {
+    cursor: pointer;
+}
+
+.atras:hover {
+    cursor: pointer;
+}

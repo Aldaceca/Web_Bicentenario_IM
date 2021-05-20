@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="estiloindex.css">
+    <link rel="stylesheet" href="estiloblog.css">
+    <link rel="stylesheet" href="anim_bg.css">
+    <link rel="stylesheet" href="anim_icon.css">
+    <link rel="stylesheet" href="estilotimeline.css">
+    <link rel="stylesheet" href="anim_timeline.css">
+    <link rel="stylesheet" href="estilo2001.css">
+    <link rel="stylesheet" href="estiloregistro.css">
+    <link rel="stylesheet" href="Egresados.css">
+    <link rel="icon" href="imagenes/LogoPestaña.ico">
+    <link rel="stylesheet" href="./app.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    <title>Blog</title>
+</head>
+
+<body>
+    <div class="Eg-Prbg">
+
+        <!-- Menu izquierdo -->
+        <div class="flotante2">
+            <input type="checkbox" id="openmenu">
+            <label for="openmenu"><img class="pop" src="imagenes/BotonMenu.png"></label>
+            <div id="menu-pane">
+
+                <div class="d-flex justify-content-center">
+                    <a class="reg" onclick="location.href='timeline.html'">
+                        <img class="iconmenu" data-toggle="tooltip" data-placement="bottom" title="Linea del tiempo" src="imagenes/Lineadetiempo.png" alt="Icon_timeline">
+                    </a>
+                </div>
+                <div class="sep"></div>
+                <div class="d-flex justify-content-center">
+                    <a class="reg" onclick="location.href='blog.html'">
+                        <img class="iconmenu" data-toggle="tooltip" data-placement="bottom" title="Blog" src="imagenes/Blog.png" alt="Icon_blog">
+                    </a>
+                </div>
+                <div class="sep"></div>
+                <div class="d-flex justify-content-center">
+                    <a class="reg" onclick="location.href='Eg-Pr.html'">
+                        <img class="iconmenu" data-toggle="tooltip" data-placement="bottom" title="Egresados y Docentes" src="imagenes/Egresados.png" alt="Icon_Egresado">
+                    </a>
+                </div>
+                <div class="sep"></div>
+                <div class="d-flex justify-content-center">
+                    <a class="reg" onclick="location.href='infocreadores.html'">
+                        <img class="iconmenu" data-toggle="tooltip" data-placement="bottom" title="Desarrolladores" src="imagenes/Desarrolladores.png" alt="Icon_Development">
+                    </a>
+                </div>
+                <div class="sep2"></div>
+                <div class="d-flex justify-content-center">
+                    <a class="reg" onclick="location.href='index.html'">
+                        <img class="iconmenu" data-toggle="tooltip" data-placement="bottom" title="Pagina Principal" src="imagenes/logo20.png" alt="Inicio">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- FIN Menu ezquierdo -->
+
+        <div class="flotante1">
+            <input type="checkbox" id="openmenu2">
+            <label for="openmenu2"><img class="pop2" src="imagenes/botonlogin.png"></label>
+            <div id="menu-pane2">
+                <div>
+                    <div id="muestra" class="alert alert-primary">
+
+                        <div class="d-flex justify-content-center bot2"><a class="reg" onclick="location.href='autenticacion.html'">REGISTRARSE</a></div>
+                        <div class="sep"></div>
+                        <div class="d-flex justify-content-center bot2">
+                            <a class="reg" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            INICIAR SESION
+                        </a>
+
+                        </div>
+                        <div class="collapse" id="collapseExample">
+                            <div class=" card card-body d-flex align-items-center">
+                                <div class="separadores"></div>
+                                <div>
+                                    <a class=" btn btn-lg btn-google btn-block text-uppercase btn-outline" id="google" href="#"><img src="https://img.icons8.com/color/16/000000/google-logo.png"> INICIAR SESION</a>
+                                </div>
+                                <div class="separadores"></div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control ses" id="emailnuevo" placeholder="Correo">
+                                </div>
+                                <div class="separadores3"></div>
+                                <div class="form-group">
+                                    <input type="password" class=" form-control ses" placeholder="Contraseña" id="pass">
+                                </div>
+                                <div class="separadores"></div>
+                                <div class="btn01 d-flex justify-content-around">
+                                    <button class="btn btn-primary rounded-pill" onclick="inicio()">INICIAR
+                                    SESION</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="alert alert-primary " role="alert" id="sesion"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <main role="main">
+            <!-- JUMBOTRON -->
+            <div class="jumbotron">
+                <div class="container" id="primeroEg-Pr">
+                    <h1 class="display-3 pt-4"></h1>
+                    <h2>
+                        BLOG INGENIERIA DE MULTIMEDIA
+                    </h2>
+                    <p>
+                        <div class="row paddtop2"></div>
+                        <a class="btn btn-primary btn-lg" href="create.html" role="button">Crear Publicacion &raquo;</a  
+              >
+            </p>
+          </div>
+        </div>
+        <div class="row paddtop2"></div>
+        <div class="row paddtop2"></div>
+        <div class="container">
+          <!-- Example row of columns -->
+          <div class="row publi" id="posts-collection"></div>
+  
+          <hr />
+        </div>
+        <!-- /container -->
+      </main>
+  
+      <!-- Firebase -->     
+      <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+  
+      <!-- Bootstrap -->
+      <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"
+      ></script>
+  
+      <script src="app.js"></script>
+
+    
+        
+    </div>
+</div>
+</body>
+
+</html>

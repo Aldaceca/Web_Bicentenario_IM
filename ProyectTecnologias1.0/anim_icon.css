@@ -1,0 +1,92 @@
+.iconmenu {
+    width: 52px;
+    height: 52px;
+    transition: transform .2s;
+}
+
+.iconmenu:hover {
+    transform: scale(1.2);
+}
+
+
+/*animacion logo 20 años inicio*/
+
+.a22 {
+    height: 65px;
+    transition: transform .2s;
+    animation-timing-function: ease-in-out;
+    animation: logoB20 2s infinite;
+}
+
+@keyframes logoB20 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.dot2 {
+    height: 100px;
+    min-width: 100px;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
+
+/*animacion logo 20 años mitad*/
+
+.a20 {
+    height: 90px;
+    transition: transform .2s;
+    animation-timing-function: ease-in-out;
+    animation: logoN20 2s infinite;
+}
+
+@keyframes logoN20 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.dot {
+    height: 152px;
+    min-width: 152px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
+
+/*Animacion Logo Principal*/
+
+.ig {
+    min-width: 10vw;
+    animation-timing-function: ease-in-out;
+    animation: logomain 2s infinite;
+}
+
+@keyframes logomain {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(8px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

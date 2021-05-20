@@ -1,0 +1,33 @@
+body {
+    margin: 0 auto;
+}
+
+.containerblog {
+    background-color: aqua;
+    height: 100vh;
+    width: 100vw;
+}
+
+.publi {
+    background-color: aquamarine;
+    border-radius: 20px;
+}
+
+.paddtop2 {
+    height: 50px;
+}
+
+#primeroEg-Pr {
+    height: 120px;
+    background: #68a2fa;
+    border-radius: 15px;
+}
+
+.container h2 {
+    font-size: 35px;
+}
+
+.Eg-Prbg {
+    background-color: #c5d6fb;
+    height: 1000px;
+}

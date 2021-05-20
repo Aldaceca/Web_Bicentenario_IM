@@ -1,0 +1,68 @@
+.banner {
+    height: 450px;
+}
+
+.paddtop {
+    height: 75px;
+}
+
+h1 {
+    font-size: 70px;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+p {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+body {
+    background-color: #242327;
+}
+
+.ph1 {
+    max-width: 247px;
+    max-height: 247px;
+}
+
+.padcre {
+    padding-top: 13px;
+}
+
+.Creadores {
+    padding: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .banner {
+        background-color: #242327;
+    }
+}
+
+#primeroEg-Pr {
+    height: 120px;
+    background: #68a2fa;
+    border-radius: 15px;
+}
+
+#myVideo {
+    z-index: -1;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 1;
+}
+
+.negro {
+    z-index: -1;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgb(47, 39, 0);
+    opacity: 0.6;
+}

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="estiloindex.css">
+    <link rel="stylesheet" href="anim_bg.css">
+    <link rel="stylesheet" href="anim_icon.css">
+    <link rel="stylesheet" href="estilotimeline.css">
+    <link rel="stylesheet" href="estiloEg-Pr.css">
+    <link rel="icon" href="imagenes/LogoPestaña.ico">
+    
+    <script src="tooltipmenu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <title>Egresados y Docentes</title>
+</head>
+
+<body>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <div class="Eg-Prbg">
+
+        <!-- Menu izquierdo -->
+        <div class="flotante2">
+            <input type="checkbox" id="openmenu">
+            <label for="openmenu"><img class="pop" src="imagenes/BotonMenu.png"></label>
+            <div id="menu-pane">
+        
+                <div class="d-flex justify-content-center">
+                    <a class="reg" onclick="location.href='timeline.html'">
+                        <img class="iconmenu" data-toggle="tooltip" data-placement="bottom" title="Linea del tiempo"
+                            src="imagenes/Lineadetiempo.png" alt="Icon_timeline">
+                    </a>
+                </div>
+                <div class="sep"></div>
+                <div class="d-flex justify-content-center">
+                    <a class="reg" onclick="location.href='blog.html'">
+                        <img class="iconmenu" data-toggle="tooltip" data-placement="bottom" title="Blog" src="imagenes/Blog.png"
+                            alt="Icon_blog">
+                    </a>
+                </div>
+                <div class="sep"></div>
+                <div class="d-flex justify-content-center">
+                    <a class="reg" onclick="location.href='Eg-Pr.html'">
+                        <img class="iconmenu" data-toggle="tooltip" data-placement="bottom" title="Egresados y Docentes"
+                            src="imagenes/Egresados.png" alt="Icon_Egresado">
+                    </a>
+                </div>
+                <div class="sep"></div>
+                <div class="d-flex justify-content-center">
+                    <a class="reg" onclick="location.href='infocreadores.html'">
+                        <img class="iconmenu" data-toggle="tooltip" data-placement="bottom" title="Desarrolladores"
+                            src="imagenes/Desarrolladores.png" alt="Icon_Development">
+                    </a>
+                </div>
+                <div class="sep2"></div>
+                <div class="d-flex justify-content-center">
+                    <a class="reg" onclick="location.href='index.html'">
+                        <img class="iconmenu" data-toggle="tooltip" data-placement="bottom" title="Pagina Principal"
+                            src="imagenes/logo20.png" alt="Inicio">
+                    </a>
+                </div>
+        
+            </div>
+        </div>
+        <!-- FIN Menu ezquierdo -->
+
+        <div class="row col-12 paddtop"></div>
+        <div class="row Egresados d-flex align-items-center" id="primeroEg-Pr">
+
+            <div class="col-4"></div>
+            <div class="col-4 d-flex justify-content-center">
+                <h1 class="font-weight-bold" id="txt_Egresados"> Egresados </h1>
+
+            </div>
+            <div class="col-4"></div>
+        </div>
+
+        <div class="row col-12 paddtop"></div>
+
+        <!-- INICIO CARRUSEL EGRESADOS -->
+
+        <div class="row col-12">
+            <div class="col-1"></div>
+            <div id="carouselegresado" class="carousel slide col-10" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselegresado" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" onclick=""></button>
+                    <button type="button" data-bs-target="#carouselegresado" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselegresado" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active h-100">
+                        <div class="row slide-egre d-flex justify-content-center align-items-center" id="primeroinfo">
+                            <div class="row paddtop2"></div>
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-5 d-flex justify-content-center align-items-center">
+                                    <div>
+                                        <img class="rounded-circle img-fluid ph1" src="imagenes/Egresado1.png">
+                                    </div>
+                                </div>
+                                <div class="txt-info-egre col-md-5">
+                                    <div class="d-flex justify-content-center">
+                                        <h2 class="NomEgre"> Andrés Siachoque (2013) </h2>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p> Ingeniero Multimedia</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p>
+                                            Area de desempeño: Co-founder / CEO de Tridiam Studios
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p>Experiencia estudiando Ingeniería Multimedia: </p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p> Muy buena, en especial por nuestro proyecto de grado que nos incentivó a crear nuestra
+                                            empresa que ya lleva 9 años en el mercado. Lo mejor que me dejó: conocí a mi co-fundadora de
+                                            Tridiam Studios.
+                                        </p>
+                                    </div>
+                                    <div class=" row d-flex align-items-center" id="primeroinfo">
+                                        <div class="col-12">
+                                            <a data-toggle="tooltip" data-placement="bottom" title="Informacion" href="https://tato.la/">
+                                                <div class="atras d-flex justify-content-center">
+                                                    <img class="rounded-circle ph2" src="imagenes/info.png">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-1"> </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                            <div class="row paddtop2"></div> 
+                        </div>
+                    </div>
+                    <div class="carousel-item h-100">
+                        <div class="row slide-egre d-flex justify-content-center align-items-center" id="primeroinfo">
+                            <div class="row paddtop2"></div>
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-5 d-flex justify-content-center align-items-center">
+                                    <div>
+                                        <img class="rounded-circle img-fluid ph1" src="imagenes/Egresado2.jpg">
+                                    </div>
+                                </div>
+                                <div class="txt-info-egre col-md-5">
+                                    <div class="d-flex justify-content-center">
+                                        <h2 class="NomEgre">Jourdan Steven Pico Fuquen</h2>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p> Ingeniero Multimedia - Cursos de Experiencia de Usuario</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p>
+                                            Area de desempeño: Diseñador (UX & UI)
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p>Experiencia estudiando Ingeniería Multimedia:</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p> Fue una experiencia enriquecedora, a medida que se iba avanzando en la carrera, personalmente uno iba encontrando el camino
+                                            que mas le gustaba para desarrollarse el camino que mas le gustaba para desarrollarse profesionalmente, además de que el soporte
+                                            técnico y personal de los docentes fue clave.
+                                        </p>
+                                    </div>
+                                    <div class=" row d-flex align-items-center" id="primeroinfo">
+                                        <div class="col-12">
+                                            <a data-toggle="tooltip" data-placement="bottom" title="Informacion" href="https://www.linkedin.com/in/jourdanpico/">
+                                                <div class="atras d-flex justify-content-center">
+                                                    <img class="rounded-circle ph2" src="imagenes/info.png">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-1"> </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                            <div class="row paddtop2"></div> 
+                        </div>
+                    </div>
+                    <div class="carousel-item h-100">
+                        <div class="row slide-egre d-flex justify-content-center align-items-center" id="primeroinfo">
+                            <div class="row paddtop2"></div>
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-5 d-flex justify-content-center align-items-center">
+                                    <div>
+                                        <img class="rounded-circle img-fluid ph1" src="imagenes/Egresado3.jpeg">
+                                    </div>
+                                </div>
+                                <div class="txt-info-egre col-md-5">
+                                    <div class="d-flex justify-content-center">
+                                        <h2 class="NomEgre">Julian Figueroa (2013)</h2>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p> Ingeniero Multimedia</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p>
+                                            Area de desempeño: Ingeniero de software
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p>Experiencia estudiando Ingeniería Multimedia: </p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p> Las materias de desarrollo y de programación me parecieron siempre muy interesantes.
+                                        </p>
+                                    </div>
+                                    <div class=" row d-flex align-items-center" id="primeroinfo">
+                                        <div class="col-12">
+                                            <a data-toggle="tooltip" data-placement="bottom" title="Informacion" href="https://www.linkedin.com/in/julianrfigueroa/">
+                                                <div class="atras d-flex justify-content-center">
+                                                    <img class="rounded-circle ph2" src="imagenes/info.png">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-1"> </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                            <div class="row paddtop2"></div> 
+                        </div>
+                        <div class="carousel-caption d-none d-md-block"></div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselegresado" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselegresado" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <!-- FIN CARRUSEL -->
+
+        <div class="row col-12 paddtop"></div>
+        <div class="row Egresados d-flex align-items-center" id="primeroEg-Pr">
+            <div class="col-4"></div>
+            <div class="col-4 d-flex justify-content-center">
+                <h1 class="font-weight-bold" id="txt_Egresados"> Docentes </h1>
+            </div>
+            <div class="col-4"></div>
+        </div>
+        <div class="row col-12 paddtop"></div>
+
+        <!-- INICIO CARRUSEL DOCENTES -->
+
+        <div class="row col-12">
+            <div class="col-1"></div>
+            <div id="carouseldocente" class="carousel slide col-10" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouseldocente" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" onclick=""></button>
+                    <button type="button" data-bs-target="#carouseldocente" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouseldocente" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active h-100">
+                        <div class="row slide-egre d-flex justify-content-center align-items-center" id="primeroinfo">
+                            <div class="row paddtop2"></div>
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-5 d-flex justify-content-center align-items-center">
+                                    <div>
+                                        <img class="rounded-circle ph1" src="imagenes/Docente1.jpg">
+                                    </div>
+                                </div>
+                                <div class="txt-info-egre col-md-5">
+                                    <div class="d-flex justify-content-center">
+                                        <h2 class="NomEgre">Carlos Alberto Rocha Castaño (2010)</h2>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p>Ingeniero Multimedia</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p>Experiencia como docente en el programa: </p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p> La experiencia ha sido muy positiva, como egresado del programa he visto la  evolución de la Ingeniería en Multimedia muy positivamente y  ahora como profesor, 
+                                            me llena de mucho orgullo poder ser parte de un equipo que forma nuevos Ingenieros en Multimedia, aportando en el campo desde la academia, desde la investigación, etc. 
+                                            Ver tantos estudiantes que ahora son profesionales muy exitosos  y  con gran sentido de pertenencia con el programa, hace que la labor sea muy gratificante.
+                                        </p>
+                                    </div>
+                                    <div class="col-1"> </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                            <div class="row paddtop2"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item h-100">
+                        <div class="row slide-egre d-flex justify-content-center align-items-center" id="primeroinfo">
+                            <div class="row paddtop2"></div>
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-5 d-flex justify-content-center align-items-center">
+                                    <div>
+                                        <img class="rounded-circle img-fluid ph1" src="imagenes/Docente2.jpg">
+                                    </div>
+                                </div>
+                                <div class="txt-info-egre col-md-5">
+                                    <div class="d-flex justify-content-center">
+                                        <h2 class="NomEgre">Alexander Cerón Correa (2003)</h2>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p> Ingeniero de sistemas</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p>Magister en Ing. de Sistemas - Magister en Ing. Electrónica</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p>Doctorado en Ingeniería de Sistemas y Computación</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p>Experiencia como docente en el programa: </p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p> La experiencia en la enseñanza ha sido muy enriquecedora puesto que se ha podido participar en la formación ingenieril de los estudiantes, 
+                                            impartiendo diferentes asignaturas de la ingeniería multimedia, que incluyen introducción a la ingeniería, programación, computación gráfica, 
+                                            el procesamiento de señales, procesamiento de imágenes, simulación y visión por computador.
+                                        </p>
+                                    </div>
+                                    <div class="col-1"> </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                            <div class="row paddtop2"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item h-100">
+                        <div class="row slide-egre d-flex justify-content-center align-items-center" id="primeroinfo">
+                            <div class="row paddtop2"></div>
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-5 d-flex justify-content-center align-items-center">
+                                    <div>
+                                        <img class="rounded-circle img-fluid ph1" src="imagenes/Docente3.jpg">
+                                    </div>
+                                </div>
+                                <div class="txt-info-egre col-md-5">
+                                    <div class="d-flex justify-content-center">
+                                        <h2 class="NomEgre">Karen Linares luque (2008)</h2>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p>Ingeniera en Multimedia</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p>Especialista en Alta Gerencia</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p>Magister en Gestión de organizaciones</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p>Doctorado en Ingeniería de Sistemas y Computación</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p>Experiencia como docente en el programa: </p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p>
+                                            Muy gratificante, esta profesión me apasiona. Me encanta poder trasmitir mis experiencias y conocimientos a otros.
+                                        </p>
+                                    </div>
+                                    <div class="col-1"> </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                            <div class="row paddtop2"></div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouseldocente" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouseldocente" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <!-- FIN CARRUSEL -->
+
+        <div class="row col-12 paddtop"></div>
+    </div>
+</body>
+</html>

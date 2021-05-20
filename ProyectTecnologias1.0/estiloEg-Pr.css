@@ -1,0 +1,77 @@
+#primeroEg-Pr {
+    height: 127px;
+    background: #ffffff;
+}
+
+.paddtop {
+    height: 75px;
+}
+
+.paddtop2 {
+    height: 50px;
+}
+
+#txt_Egresados {
+    font-size: 3.5rem;
+    color: #3BBED8;
+}
+
+.Eg-Prbg {
+    background-color: #242327;
+}
+
+.txt-info-egre {
+    color: white;
+}
+
+.txt-info-doc {
+    color: white;
+}
+
+.slide-egre {
+    background-color: #1b1b1b;
+}
+
+.slide-doc {
+    background-color: #1b1b1b;
+}
+
+.vl {
+    border-left: 6px solid rgb(255, 255, 255);
+    height: 500px;
+}
+
+.ph1 {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.ph2 {
+    max-width: 70px;
+    max-height: 70px;
+    transition: transform .2s;
+}
+
+.ph2:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 992px) 
+{
+    .NomEgre h2 
+    {
+        font-size: 10px;
+    }
+    .txt-info-egre {
+        font-size: 10px;
+    }
+    .ph1 {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+    .ph2 {
+        width: 50px;
+        height: 50px;
+    }
+}

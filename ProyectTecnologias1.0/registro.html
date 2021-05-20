@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estiloregistro.css">
+    <link rel="icon" href="imagenes/LogoPestaña.ico">
+    <title>Registro</title>
+  </head>
+  <body>
+    <script src="js/bootstrap.bundle.min.js" ></script>
+    <div class="contenedor row h-100">
+            <div class="col-4  iz">
+                <a onclick="location.href='index.html'">
+                  <div class="atras"> 
+                    <img class="rounded-circle q" src="imagenes/atras.png">
+                  </div>
+                </a>
+                <div class="separado" ></div>  
+                <h2>BIENVENIDO</h2>
+                <div class=" int " >                    
+                    <div class="log"> 
+                      <img src="imagenes/logob.png">
+                    </div>
+                </div>            
+            </div>
+            <div class="col-8 dere">
+                <div class="i">            
+
+                    <div class="rola"><a onclick="location.href='datos.html'"><img class="rounded-circle ig" src="imagenes/Estudiante.png"></a></div> 
+                    <div class="rola"><a onclick="location.href='datos2.html'"><img class="rounded-circle ig" src="imagenes/Profesor.png"></a></div> 
+                    <div class="rola"><a onclick="location.href='datos3.html'"><img class="rounded-circle ig" src="imagenes/Egresado.png"></a></div>   
+                </div>  
+                <div class="d">
+                    <div class="rol"><a onclick="location.href='datos.html'"><h3>Estudiante</h3></a></div> 
+                    <div class="rol"><a onclick="location.href='datos2.html'"><h3>Docente</h3></a></div> 
+                    <div class="rol"><a onclick="location.href='datos3.html'"><h3>Egresado</h3></a></div>   
+                </div>              
+            </div>
+    </div>
+
+
+
+
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyCibyu4pb3Ldp8mj1n6Wi8y7lM76LPssxM",
+      authDomain: "login-b328c.firebaseapp.com",
+      projectId: "login-b328c",
+      storageBucket: "login-b328c.appspot.com",
+      messagingSenderId: "136457534820",
+      appId: "1:136457534820:web:f640bcb9a8479ccc338e71",
+      measurementId: "G-DTEQ21EP3J"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+     
+    var db = firebase.firestore();            
+  </script>
+
+  </body>
+</html>

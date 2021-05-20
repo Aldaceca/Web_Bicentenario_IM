@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estiloregistro.css">
+    <link rel="stylesheet" href="estilodatos.css">
+    <link rel="icon" href="imagenes/LogoPestaña.ico">
+    <title>Datos</title>
+</head>
+
+<body>
+    <div class="contenedor row h-100">
+        <div class="col-4 iz">
+            <a onclick="location.href='registro.html'">
+                <div class="atras">
+                    <img class="rounded-circle q" src="imagenes/atras.png">
+                </div>
+            </a>
+            <div class="separado"></div>
+            <div class=" int ">
+                <div>
+                    <img src="imagenes/logob.png">
+                </div>
+            </div>
+        </div>
+        <div class="col-8 row bgright">
+            <div class="col-3"></div>
+            <div class="col-6 row bgdatos">
+                <div class="d-flex justify-content-around"><img class="rounded-circle ig" height="100px" src="imagenes/Estudiante.png"></div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <label class="textform" for="inputnombre">Nombre</label>
+                        <input type="text" class="form-control" placeholder="First name" id="nombre">
+                    </div>
+              <!--       <div class="col-6">
+                        <label class="textform" for="inputapellido">Apellido</label>
+                        <input type="text" class="form-control" placeholder="Last name" id="apellido">
+                    </div>
+                </div>
+                <div class="form-group col-6">
+                    <label class="textform" for="inputnomus">Nombre de Usuario</label>
+                    <input type="text" class="form-control col-6" placeholder="Nombre De Usuario" id="nombreid">
+                    
+                </div>
+                <div class="form-group col-6">
+                    <label class="textform" for="inputnomus">Semestre</label>
+                    <select class="form-select form-select-mm " id="semestre" aria-label=".form-select-sm example">
+                            <option selected disabled value="" >Seleccione Su Semestre</option>
+                            <option value="Primero">Primero</option>
+                            <option value="Segundo">Segundo</option>
+                            <option value="Tercero">Tercero</option>
+                            <option value="Cuarto">Cuarto</option>
+                            <option value="Quinto">Quinto</option>
+                            <option value="Sexto">Sexto</option>
+                            <option value="Septimo">Septimo</option>
+                            <option value="Octavo">Octavo</option>
+                            <option value="Noveno">Noveno</option>
+                            <option value="Decimo">Decimo</option>
+                          </select>
+                </div>
+                <div class="form-group">
+                    <label class="textform" for="textarea">Descripcion Personal</label>
+                    <textarea class="form-control" id="textarea" rows="3"></textarea>
+                </div> -->
+                <div class="btn01 d-flex justify-content-around">
+                    <button class="btn btn-primary rounded-pill" onclick="actualizar()">Actualizar</button>
+                </div>
+                <div class="alert alert-primary " role="alert" id="login">
+
+                </div>
+
+
+            </div>
+            <div class="col-3"></div>
+            <div class="sepfoot"></div>
+        </div>
+    </div>
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyCibyu4pb3Ldp8mj1n6Wi8y7lM76LPssxM",
+            authDomain: "login-b328c.firebaseapp.com",
+            projectId: "login-b328c",
+            storageBucket: "gs://login-b328c.appspot.com",
+            messagingSenderId: "136457534820",
+            appId: "1:136457534820:web:f640bcb9a8479ccc338e71",
+            measurementId: "G-DTEQ21EP3J"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        firebase.auth().onAuthStateChanged((user) => {          
+       
+        if (user) {
+                // User is signed in, see docs for a list of available properties
+                // https://firebase.google.com/docs/reference/js/firebase.User
+                var uid = user.uid;
+                var user=firebase.auth().currentUser;
+                document.getElementById('login').innerHTML = `<P>Bienvenido ` + user.email + `<P> <button  class="btn btn-primary rounded-pill" onclick="location.href='index.html'">Go To Home</button>` + `<P> <button  class="btn btn-primary rounded-pill" onclick="location.href='perfil.html'">Mi Perfil</button>` + `<P> <button  class="btn btn-primary rounded-pill" onclick="cerrar()">Cerrar Sesion</button>`;
+                
+                } else {
+                document.getElementById('login').innerHTML = "No Ha Iniciado Sesion";
+            }
+        });
+       function actualizar(){
+        var user=firebase.auth().currentUser;
+       var nameuser = document.getElementById("nombre").value;
+
+            user.updateProfile({
+            displayName: nameuser,
+            //photoURL: "https://example.com/jane-q-user/profile.jpg"
+            }).then(function() {
+            // Update successful.
+            }).catch(function(error) {
+            // An error happened.
+            });
+       }
+
+        function cerrar() {
+            firebase.auth().signOut()
+                .then(function() {
+                    console.log('Salir');
+                })
+                .catch(function(error) {
+                    console.log('error');
+                })
+        }
+        var db = firebase.firestore();
+        var user=firebase.auth().currentUser;                   
+    </script>
+</body>
+
+</html>

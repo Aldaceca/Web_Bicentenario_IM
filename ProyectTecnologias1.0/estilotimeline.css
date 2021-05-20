@@ -1,0 +1,85 @@
+.cont_linea {
+    margin: 0 auto;
+    background-color: #F1F2F2;
+    min-height: 100vh;
+}
+
+.atras_timeline:hover {
+    cursor: pointer;
+}
+
+.paddtop {
+    height: 46px;
+}
+
+.bgtitle {
+    z-index: 1;
+    padding-top: 17px;
+    background: #377399;
+    border-radius: 9px;
+    height: 10vh;
+}
+
+.imgepoca {
+    width: 594px;
+    height: 594px;
+    border-radius: 50%;
+}
+
+.fechas {
+    font-family: Palanquin Dark;
+    font-size: 72px;
+    display: flex;
+    align-items: center;
+}
+
+.txtfechas {
+    padding-top: 114px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 49px;
+    color: #242327;
+}
+
+.paddbtm {
+    height: 2vh;
+}
+
+.dottime {
+    height: 40px;
+    width: 40px;
+    background-color: #3BBED8;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.item1 {
+    background-color: saddlebrown;
+}
+
+.tmvideo {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    height: 85vh;
+}
+
+.negro {
+    margin: 0 auto;
+    z-index: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #242327;
+    opacity: 1;
+}
+
+.Titulo h1 {
+    z-index: 1;
+    color: white;
+    font-size: 50px;
+}

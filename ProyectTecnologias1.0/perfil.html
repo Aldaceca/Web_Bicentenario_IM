@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estiloregistro.css">
+    <link rel="stylesheet" href="estilodatos.css">
+    <link rel="icon" href="imagenes/LogoPestaña.ico">
+    <title>Mi Perfil</title>
+</head>
+
+<body>
+    <div class="contenedor row h-100">
+        <div class="col-4 iz">
+            <a onclick="location.href='index.html'">
+                <div class="atras">
+                    <img class="rounded-circle q" src="imagenes/atras.png">
+                </div>
+            </a>
+            <div class="separado"></div>
+            <div class=" int ">
+                <div>
+                    <img src="imagenes/logob.png">
+                </div>
+            </div>
+        </div>
+        <div class="col-8 row bgright">
+            <div class="col-3"></div>
+            <div class="col-6 row bgdatos">
+                <div class="d-flex justify-content-around"><img class="rounded-circle ig" id="foto" height="100px"
+                        src="imagenes/Estudiante.png"></div>
+
+                <div class="row">
+                    <div class="row col-6">
+                        <label class="textform" for="inputnombre">Nombre</label>
+                        <div class="col-12" id="nombre"></div>
+                    </div>
+                    <div class="col-6">
+                        <label class="textform" for="inputapellido">Apellido</label>
+                        <div class="col-12" id="apellido"></div>
+                    </div>
+                </div>
+                <div class="form-group col-6">
+                    <label class="textform" for="inputnomus">Nombre de Usuario</label>
+                    <div class="col-12" id="nombreus"></div>
+                </div>
+                <div class="form-group col-6">
+                    <label class="textform" for="inputnomus">Semestre</label>
+                    <div class="col-12" id="semestre"></div>
+                </div>
+                <div class="form-group">
+                    <label class="textform" for="textarea">Descripcion Personal</label>
+                    <div class="col-12" id="dpersonal"></div>
+                </div>
+                <div class="form-group col-12">
+                    <label class="textform" for="inputnomus">Tag</label>
+                    <div class="col-12" id="tag"></div>
+                </div>
+                <div class="btn01 d-flex justify-content-around">
+                    <button class="btn btn-primary rounded-pill"
+                        onclick="location.href='update.html'">Actualizar</button>
+                </div>
+                <div class="alert alert-primary " role="alert" id="login">
+
+                </div>
+
+
+            </div>
+            <div class="col-3"></div>
+            <div class="sepfoot"></div>
+        </div>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyCibyu4pb3Ldp8mj1n6Wi8y7lM76LPssxM",
+            authDomain: "login-b328c.firebaseapp.com",
+            projectId: "login-b328c",
+            storageBucket: "gs://login-b328c.appspot.com",
+            messagingSenderId: "136457534820",
+            appId: "1:136457534820:web:f640bcb9a8479ccc338e71",
+            measurementId: "G-DTEQ21EP3J"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        firebase.auth().onAuthStateChanged((user) => {
+            if (user) {
+                // User is signed in, see docs for a list of available properties
+                // https://firebase.google.com/docs/reference/js/firebase.User
+                var uid = user.uid;
+                document.getElementById('login').innerHTML = `<P>Bienvenido ` + user.email + `<P> <button  class="btn btn-primary rounded-pill" onclick="location.href='index.html'">Go To Home</button>` + `<P> <button  class="btn btn-primary rounded-pill" onclick="location.href='perfil.html'">Mi Perfil</button>` + `<P> <button  class="btn btn-primary rounded-pill" onclick="cerrar()">Cerrar Sesion</button>`;
+
+                var db = firebase.firestore();
+                
+                var user = firebase.auth().currentUser;
+                db.collection(user.email)
+                    .onSnapshot(function (querySnapshot) {
+                        var nombre1 = [];
+                        var apellido = [];
+                        var nombre1us = [];
+                        var año = [];
+                        var dpersonal = [];
+                        var cargo = [];
+                        querySnapshot.forEach(function (doc) {
+
+                            apellido.push(doc.data().Apellido);
+                            nombre1us.push(doc.data().NombreUS);
+                            año.push(doc.data().año);
+                            dpersonal.push(doc.data().Descripcion);
+                            cargo.push(doc.data().cargo);
+                        });
+                        document.getElementById('nombre').innerHTML = user.displayName;
+                        document.getElementById('apellido').innerHTML = apellido;
+                        document.getElementById('nombreus').innerHTML = nombre1us;
+                        document.getElementById('semestre').innerHTML = año;
+                        document.getElementById('dpersonal').innerHTML = dpersonal;
+                        document.getElementById('tag').innerHTML = user.displayName + '#' + cargo + '_' + año;                      
+                        document.getElementById('foto').src = user.photoURL;
+                       
+                        console.log("imagen mostrada "+user.photoURL);
+
+                    });
+            } else {
+                document.getElementById('login').innerHTML = "No Ha Iniciado Sesion";
+            }
+        });
+
+
+
+
+        function cerrar() {
+            firebase.auth().signOut()
+                .then(function () {
+                    console.log('Salir');
+                })
+                .catch(function (error) {
+                    console.log('error');
+                })
+        }
+
+        function actualizar() {
+            var user = firebase.auth().currentUser;
+            db.collection(user.email)
+                .onSnapshot(doc => {
+                    var datos = [];
+                    querySnapShot.forEach(function (doc) {
+                        datos.push(doc.data())
+                    });
+                });
+        }
+
+
+    </script>
+</body>
+
+</html>
