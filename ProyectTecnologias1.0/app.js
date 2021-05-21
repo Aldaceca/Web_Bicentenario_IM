@@ -35,12 +35,14 @@ var firebaseConfig = {
   function createPost(title, imagen,link,autor, content) {
     let div = document.createElement("div");
     div.setAttribute("class", "col-md-12");
-  
+
+
     let h2 = document.createElement("h2");
     let p = document.createElement("p");
     let img = document.createElement("img");
     let small = document.createElement("a");
     let p2 = document.createElement("p");
+    let espacio=document.createElement("p")
     
     h2.textContent = title;
     img.src=imagen;
@@ -48,12 +50,17 @@ var firebaseConfig = {
     small.textContent = "Linkeding";
     small.href = link;
     p2.textContent = autor;
+    espacio.textContent="-------------------------------------------------------------------------------------------------------------------------------";
   
     div.appendChild(h2);    
     div.appendChild(small);
      div.appendChild(p2);
     div.appendChild(p);    
      div.appendChild(img);
+     div.appendChild(espacio);
+     
+    
+    
      
   
     postCollection.appendChild(div);
