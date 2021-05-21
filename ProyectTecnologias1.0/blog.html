@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="estiloindex.css">
-    <link rel="stylesheet" href="estiloblog.css">
-    <link rel="stylesheet" href="anim_bg.css">
+
+
     <link rel="stylesheet" href="anim_icon.css">
     <link rel="stylesheet" href="estilotimeline.css">
- 
-    <link rel="stylesheet" href="estilo2001.css">
-    <link rel="stylesheet" href="estiloregistro.css">
+    <link rel="stylesheet" href="estiloblog2.css">
+
+
 
     <link rel="icon" href="imagenes/LogoPestaña.ico">
     <link rel="stylesheet" href="./app.css" />
@@ -24,7 +24,8 @@
 </head>
 
 <body>
-    <div class="Eg-Prbg">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <div class="row" id="cuarto2">
 
         <!-- Menu izquierdo -->
         <div class="flotante2">
@@ -66,62 +67,61 @@
         </div>
         <!-- FIN Menu ezquierdo -->
 
-       
+
 
         <main role="main">
             <!-- JUMBOTRON -->
-            <div class="jumbotron">
-                <div class="container" id="primeroEg-Pr">
-                    <h1 class="display-3 pt-4"></h1>
-                    <h2>
-                        BLOG INGENIERIA DE MULTIMEDIA
-                    </h2>
-                    <p>
-                        <div class="row paddtop2"></div>
-                        <a class="btn btn-primary btn-lg" id="crear" href="create.html" role="button">Crear Publicacion &raquo;</a>
-            </p>
-          </div>
-        </div>
-        <div class="row paddtop2"></div>
-        <div class="row paddtop2"></div>
-        <div class="container">
-          <!-- Example row of columns -->
-          <div class="row publi" id="posts-collection"></div>
-  
-          <hr />
-        </div>
-        <!-- /container -->
-      </main>
-  
-      <!-- Firebase -->     
-      <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-storage.js"></script>
-  
-      <!-- Bootstrap -->
-      <script
-        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"
-      ></script>
-  
-      <script src="app.js"></script>
+            <div class="row">
+                <div class="col-md-1 d-xs-none"></div>
+                <div class="col-md-10 col-sm-12 d-flex justify-content-center">
+                    <div class="row col-12 paddtop">
+                        <div class="container" id="primero1">
+                            <h1 class="display-3 pt-4"></h1>
+                            <h2>
+                                BLOG INGENIERIA DE MULTIMEDIA
+                            </h2>
+                            <p>
+                                <div class="row paddtop2"></div>
+                                <a class="btn btn-primary btn-lg" href="create.html" role="button">Crear Publicacion &raquo;</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1 d-xs-none"></div>
+            </div>
+
+            <div class="row col-12 paddtop"></div>
+            <div class="row col-12 paddtop"></div>
+            <div class="row col-12 paddtop"></div>
+            <div class="row paddtop2"></div>
+            <div class="container">
+                <!-- Example row of columns -->
+                <div class="row publi" id="posts-collection"></div>
+
+                <hr />
+            </div>
+
+
+            <!-- /container -->
+        </main>
+
+        <!-- Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-storage.js"></script>
+
+        <!-- Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <script src="app.js"></script>
 
 
     </div>
-</div>
+
 </body>
 
 </html>
