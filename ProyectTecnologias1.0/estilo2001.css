@@ -17,7 +17,43 @@
     cursor: pointer;
 }
 
-#myVideo {
+.tituloaños {
+    font-size: 40px;
+}
+
+.añohito {
+    font-size: 30px;
+}
+
+.infohito {
+    font-size: 20px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 992px) {
+    .tituloaños {
+        font-size: 30px;
+    }
+    .añohito {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tituloaños {
+        font-size: 15px;
+    }
+    .infohito {
+        font-size: 15px;
+        text-align: justify;
+    }
+    .q{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+#videoBG {
     z-index: -1;
     position: fixed;
     min-width: 100%;
@@ -25,11 +61,25 @@
     opacity: 1;
 }
 
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #videoBG {
+        width: auto;
+        height: 100%;
+    }
+}
+
 .negro {
     z-index: -1;
-    position: absolute;
-    min-width: 100%;
-    min-height: 300%;
+    position: fixed;
+    min-width: 105%;
+    min-height: 100%;
     background-color: rgb(47, 39, 0);
     opacity: 0.6;
 }
@@ -39,7 +89,7 @@ p {
 }
 
 .q {
-    max-width: 55px;
+    max-width: 50px;
     transition: transform .2s;
 }
 
