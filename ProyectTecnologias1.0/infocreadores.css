@@ -1,7 +1,7 @@
-html {
+/* html {
     overflow-y: hidden;
     overflow-x: hidden;
-}
+} */
 
 .paddtop {
     height: 40px;
@@ -38,14 +38,15 @@ body {
 .Creadores {
     padding: 10px;
 }
-.nomcreador
-{
+
+.nomcreador {
     font-size: 25px;
 }
-.rol
-{
+
+.rol {
     font-size: 15px;
 }
+
 #videoBG {
     position: fixed;
     z-index: -1;
@@ -91,7 +92,7 @@ body {
     opacity: 1;
 }
 
-.negro{
+.negro {
     z-index: -1;
     position: absolute;
     min-width: 105%;
