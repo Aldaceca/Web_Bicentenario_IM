@@ -42,3 +42,7 @@ p {
     max-width: 55px;
     transition: transform .2s;
 }
+
+.q:hover {
+    transform: scale(1.1);
+}

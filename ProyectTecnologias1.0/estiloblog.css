@@ -1,5 +1,6 @@
 body {
     margin: 0 auto;
+    background-color: #c5d6fb;
 }
 
 .containerblog {
@@ -9,7 +10,7 @@ body {
 }
 
 .publi {
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
 }
 
@@ -17,9 +18,15 @@ body {
     height: 50px;
 }
 
-#primeroEg-Pr {
-    height: 120px;
-    background: #68a2fa;
+#primero1 {
+    height: 100px;
+    background: #ffffff;
+    border-radius: 100px;
+}
+
+#primero2 {
+    height: 500px;
+    background: #ffffff;
     border-radius: 15px;
 }
 
@@ -27,8 +34,16 @@ body {
     font-size: 35px;
 }
 
+#cuarto2 {
+    background: linear-gradient(180deg, #1B3B4E 0%, rgba(36, 35, 39, 1) 100%);
+    padding-top: 20px;
+}
 
-/* .Eg-Prbg {
-    background-color: #353535;
-    height: 1000px;
-} */
+#linea hr {
+    width: 10000px;
+}
+
+.Eg-Prbg {
+    background: linear-gradient(180deg, #1B3B4E 0%, rgba(36, 35, 39, 1) 100%);
+    padding-top: 20px;
+}

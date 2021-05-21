@@ -1,3 +1,8 @@
+html {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
 .banner {
     height: 450px;
 }
@@ -62,7 +67,7 @@ body {
     z-index: -1;
     position: absolute;
     min-width: 100%;
-    min-height: 100%;
+    min-height: 105%;
     background-color: rgb(47, 39, 0);
     opacity: 0.6;
 }
