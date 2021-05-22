@@ -83,9 +83,10 @@ document.querySelector("#submitBtn").addEventListener("click", function () {
         link: link,
         postContent: postContent
         
+        
       });
    
-   
+      document.getElementById('publ').innerHTML = `<P>Publicacion Exitosa `  + `<P> <button  class="btn btn-primary rounded-pill" onclick="location.href='blog.html'">Ir Al Blog</button>` + '<p>';
   }
 });
            
