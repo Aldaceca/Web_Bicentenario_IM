@@ -10,41 +10,74 @@
   </head>
   <body>
     <script src="js/bootstrap.bundle.min.js" ></script>
-    <div class="contenedor row h-100">
-            <div class="col-4  iz">
-                <a onclick="location.href='index.html'">
-                  <div class="atras"> 
-                    <img class="rounded-circle q" src="imagenes/atras.png">
-                  </div>
-                </a>
-                <div class="separado" ></div>  
-                <h2>BIENVENIDO</h2>
-                <div class=" int " >                    
-                    <div class="log"> 
-                      <img src="imagenes/logob.png">
+    <div class="contenedor row h-100 w-100">
+      <div class="col-md-4 iz">
+        <a onclick="location.href='index.html'">
+          <div class="atras">
+            <img class="rounded-circle q" src="imagenes/atras.png">
+          </div>
+        </a>
+        <h2 class="titulo-rol">Bienvenido</h2>
+        <div class="int d-flex justify-content-center align-items-center">
+          <div class="log">
+            <img class="logosilueta img-fluid" src="imagenes/logob.png">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8 row d-flex justify-content-center align-items-center dere">
+        <div class="col-xl-4 row">
+          <div class="col-12 d-flex justify-content-center align-items-center">
+            <a onclick="location.href='datos.html'"><img class="rounded-circle ig" src="imagenes/Estudiante.png"></a>
+          </div>
+          <div class="col-12 d-flex justify-content-center rol">
+            <a onclick="location.href='datos.html'">
+              <h3 class="txt-rol">Estudiante</h3>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-4 row">
+          <div class="col-12 d-flex justify-content-center align-items-center">
+            <a onclick="location.href='datos2.html'"><img class="rounded-circle ig" src="imagenes/Profesor.png"></a>
+          </div>
+          <div class="col-12 d-flex justify-content-center rol">
+            <a onclick="location.href='datos2.html'">
+              <h3 class="txt-rol">Docente</h3>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-4 row">
+          <div class="col-12 d-flex justify-content-center align-items-center">
+            <a onclick="location.href='datos3.html'"><img class="rounded-circle ig" src="imagenes/Egresado.png"></a>
+          </div>
+          <div class="col-12 d-flex justify-content-center rol">
+            <a onclick="location.href='datos3.html'">
+              <h3 class="txt-rol">Egresado</h3>
+            </a>
+          </div>
+        </div>
+        <!-- <div class="col-4 d-flex justify-content-center rola">
+                    <div class="d-flex justify-content-center">
+                      <a onclick="location.href='datos.html'"><img class="rounded-circle ig" src="imagenes/Estudiante.png"></a>
                     </div>
-                </div>            
-            </div>
-            <div class="col-8 dere">
-                <div class="i">            
-
-                    <div class="rola"><a onclick="location.href='datos.html'"><img class="rounded-circle ig" src="imagenes/Estudiante.png"></a></div> 
-                    <div class="rola"><a onclick="location.href='datos2.html'"><img class="rounded-circle ig" src="imagenes/Profesor.png"></a></div> 
-                    <div class="rola"><a onclick="location.href='datos3.html'"><img class="rounded-circle ig" src="imagenes/Egresado.png"></a></div>   
-                </div>  
-                <div class="d">
-                    <div class="rol"><a onclick="location.href='datos.html'"><h3>Estudiante</h3></a></div> 
-                    <div class="rol"><a onclick="location.href='datos2.html'"><h3>Docente</h3></a></div> 
-                    <div class="rol"><a onclick="location.href='datos3.html'"><h3>Egresado</h3></a></div>   
-                </div>              
-            </div>
+                    <div class="d-flex justify-content-center rol">
+                      <a onclick="location.href='datos.html'"><h3>Estudiante</h3></a>
+                    </div>
+                  </div> -->
+    
+        <!-- <div class="col-4 d-flex justify-content-center rola">
+                    <a onclick="location.href='datos2.html'"><img class="rounded-circle ig" src="imagenes/Profesor.png"></a>
+                  </div>
+                  <div class="rol"><a onclick="location.href='datos2.html'">
+                    <h3>Docente</h3>
+                  </a></div>
+                  <div class="col-4 d-flex justify-content-center rola">
+                    <a onclick="location.href='datos3.html'"><img class="rounded-circle ig" src="imagenes/Egresado.png"></a>
+                  </div>
+                  <div class="rol"><a onclick="location.href='datos3.html'">
+                    <h3>Egresado</h3>
+                  </a></div> -->
+      </div>
     </div>
-
-
-
-
-
-
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>

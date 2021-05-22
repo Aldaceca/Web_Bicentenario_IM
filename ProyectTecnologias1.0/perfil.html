@@ -13,63 +13,55 @@
 
 <body>
     <div class="contenedor row h-100">
-        <div class="col-4 iz">
+        <div class="col-lg-4 iz">
             <a onclick="location.href='index.html'">
                 <div class="atras">
                     <img class="rounded-circle q" src="imagenes/atras.png">
                 </div>
             </a>
-            <div class="separado"></div>
-            <div class=" int ">
+            <div class="int d-flex justify-content-center align-items-center">
                 <div>
-                    <img src="imagenes/logob.png">
+                    <img class="logosilueta img-fluid" src="imagenes/logob.png">
                 </div>
             </div>
         </div>
-        <div class="col-8 row bgright">
-            <div class="col-3"></div>
-            <div class="col-6 row bgdatos">
-                <div class="d-flex justify-content-around"><img class="rounded-circle ig" id="foto" height="100px"
-                        src="imagenes/Estudiante.png"></div>
-
+        <div class="col-lg-8 d-flex justify-content-center align-items-center row bgright">
+            <div class="col-xl-8 d-flex justify-content-center align-items-center row bgdatos">
+                <div class="d-flex justify-content-around">
+                    <img class="rounded-circle ig" id="foto" height="100px" src="imagenes/Estudiante.png">
+                </div>
                 <div class="row">
-                    <div class="row col-6">
+                    <div class="col-sm-6">
                         <label class="textform" for="inputnombre">Nombre</label>
-                        <div class="col-12" id="nombre"></div>
+                        <div class="col-12 txtdato" id="nombre"></div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-6">
                         <label class="textform" for="inputapellido">Apellido</label>
-                        <div class="col-12" id="apellido"></div>
+                        <div class="col-12 txtdato" id="apellido"></div>
                     </div>
                 </div>
-                <div class="form-group col-6">
+                <div class="form-group col-sm-6">
                     <label class="textform" for="inputnomus">Nombre de Usuario</label>
-                    <div class="col-12" id="nombreus"></div>
+                    <div class="col-12 txtdato" id="nombreus"></div>
                 </div>
-                <div class="form-group col-6">
+                <div class="form-group col-sm-6">
                     <label class="textform" for="inputnomus">Semestre / Año de Graduacion</label>
-                    <div class="col-12" id="semestre"></div>
+                    <div class="col-12 txtdato" id="semestre"></div>
                 </div>
                 <div class="form-group">
                     <label class="textform" for="textarea">Descripcion Personal</label>
-                    <div class="col-12" id="dpersonal"></div>
+                    <div class="col-12 txtdato" id="dpersonal"></div>
                 </div>
                 <div class="form-group col-12">
                     <label class="textform" for="inputnomus">Tag</label>
-                    <div class="col-12" id="tag"></div>
+                    <div class="col-12 txtdato" id="tag"></div>
                 </div>
                 <div class="btn01 d-flex justify-content-around">
                     <button class="btn btn-primary rounded-pill"
                         onclick="location.href='update.html'">Actualizar</button>
                 </div>
-                <div class="alert alert-primary " role="alert" id="login">
-
-                </div>
-
-
+                <div class="alert alert-primary " role="alert" id="login"></div>
             </div>
-            <div class="col-3"></div>
-            <div class="sepfoot"></div>
         </div>
     </div>
 

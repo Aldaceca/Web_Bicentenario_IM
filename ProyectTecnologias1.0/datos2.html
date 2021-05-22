@@ -13,31 +13,26 @@
 
 <body>
     <div class="contenedor row h-100">
-        <div class="col-4 iz">
+        <div class="col-lg-4 iz">
             <a onclick="location.href='registro.html'">
                 <div class="atras">
                     <img class="rounded-circle q" src="imagenes/atras.png">
                 </div>
             </a>
-            <div class="separado"></div>
-            <div class=" int ">
-                <div>
-                    <img src="imagenes/logob.png">
-                </div>
+            <div class="int d-flex justify-content-center align-items-center">
+                <img class="logosilueta img-fluid" src="imagenes/logob.png">
             </div>
         </div>
-        <div class="col-8 row bgright">
-            <div class="col-3"></div>
-            <div class="col-6 row bgdatos">
-                <div class="d-flex justify-content-around"><img class="rounded-circle ig" height="100px"
-                        src="imagenes/Profesor.png"></div>
-
+        <div class="col-lg-8 d-flex justify-content-center align-items-center row bgright">
+            <div class="col-xl-8 d-flex justify-content-center align-items-center row bgdatos">
+                <div class="d-flex justify-content-center">
+                    <img class="rounded-circle ig" height="100px" src="imagenes/Profesor.png">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-sm-6">
                         <label class="textform" for="inputnombre">Nombre</label>
                         <input type="text" class="form-control" placeholder="First name" id="nombre">
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-6">
                         <label class="textform" for="inputapellido">Apellido</label>
                         <input type="text" class="form-control" placeholder="Last name" id="apellido">
                     </div>
@@ -58,19 +53,10 @@
                 <div class="btn01 d-flex justify-content-around">
                     <button class="btn btn-primary rounded-pill" onclick="datos1(),actualizar()">Crear Usuario</button>
                 </div>
-                <div class="alert alert-primary " role="alert" id="login">
-
-                </div>
-
-
+                <div class="alert alert-primary " role="alert" id="login"></div>
             </div>
-            <div class="col-3"></div>
-            <div class="sepfoot"></div>
         </div>
     </div>
-
-
-
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>

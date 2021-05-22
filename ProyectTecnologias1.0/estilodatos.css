@@ -7,22 +7,26 @@ html {
 }
 
 .textform {
-    color: #FFFFFF;
+    color: #0E1924;
 }
-
+.txtdato
+{
+    color: aliceblue;
+}
 .bgdatos {
     background-color: rgba(255, 255, 255, 0.20);
-    
-    border-radius: 4%;
+    border-radius: 2%;
+    padding-top: 5%;
+    margin: 0 auto;
 }
 
 .bgright {
     background-color: #0E1924;
-    padding-top: 10%;
 }
 
 .btn01 {
     padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .btn-primary {
@@ -31,4 +35,33 @@ html {
 
 .sepfoot {
     height: 20%;
+}
+@media screen and (max-width: 992px) 
+{
+    .logosilueta {
+        width: 100px;
+        height: 100px;
+    }
+}
+@media screen and (max-width: 768px) 
+{
+    .bgright {
+        margin: 0 auto;
+        padding-top: 0%;
+    }
+    .bgdatos
+    {
+        border-radius: 0%;
+    }
+}
+@media screen and (max-width: 576px) 
+{
+    .bgright {
+        margin: 0 auto;
+        padding-top: 0%;
+    }
+    .bgdatos
+    {
+        border-radius: 0%;
+    }
 }

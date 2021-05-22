@@ -10,42 +10,31 @@
 </head>
 <body>
     <div class="contenedor row h-100">
-        <div class="col-4 iz">
+        <div class="col-lg-4 col-md-3 iz">
             <a onclick="location.href='index.html'">
                 <div class="atras">
                     <img class="rounded-circle q" src="imagenes/atras.png">
                 </div>
             </a>
-            <div class="separado"></div>
-            <div class=" int ">
-                <div>
-                    <img src="imagenes/logob.png">
-                </div>
+            <div class="int d-flex justify-content-center align-items-center">
+                <img class="logosilueta img-fluid"src="imagenes/logob.png">
             </div>
         </div>
-        <div class="col-8 row bgright">
-            <div class="col-3"></div>
-            <div class="col-6 row bgdatos">
-
+        <div class="col-lg-8 col-md-9 d-flex justify-content-center align-items-center row bgright">
+            <div class="col-xl-8 d-flex justify-content-center align-items-center row bgdatos">
                 <div class="form-group">
                     <label class="textform" for="inputemail">Correo</label>
                     <input type="email" class="form-control" id="emailnuevo" placeholder="name@example.com">
                 </div>
                 <div class="form-group">
-                    <label class="textform" for="inputpass">Constraseña</label>
+                    <label class="textform" for="inputpass">Contraseña</label>
                     <input type="password" class="form-control" id="pass">
                 </div>
-                <div class="btn01 d-flex justify-content-around">
+                <div class="btn01 d-flex justify-content-center">
                     <button class="btn btn-primary rounded-pill"  onclick="enviar1()">Crear Usuario</button>
                 </div>
-                <div class="alert alert-primary " role="alert" id="login">
-
-                </div>
-
-
+                <div class="alert alert-primary " role="alert" id="login"></div>
             </div>
-            <div class="col-3"></div>
-            <div class="sepfoot"></div>
         </div>
     </div>
 

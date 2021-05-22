@@ -1,5 +1,4 @@
 html {
-    overflow-y: hidden;
     overflow-x: hidden;
 }
 
@@ -45,11 +44,6 @@ h3:hover {
     padding-top: 17%;
 }
 
-.i {
-    display: flex;
-    justify-content: space-around;
-}
-
 .d {
     display: flex;
     justify-content: space-around;
@@ -61,8 +55,8 @@ a {
 }
 
 .ig {
-    max-width: 247px;
-    max-height: 247px;
+    max-width: 230px;
+    max-height: 230px;
     transition: transform .2s;
 }
 
@@ -72,13 +66,20 @@ a {
 
 .int {
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
+    padding-top: 100px;
 }
 
 .log {
     border-top: solid #ffffff 5px;
     width: 250px;
+}
+
+.titulo-rol {
+    font-size: 50px;
+}
+
+.txt-rol {
+    font-size: 50px;
 }
 
 .rol:hover {
@@ -92,3 +93,53 @@ a {
 .atras:hover {
     cursor: pointer;
 }
+@media screen and (max-width: 992px) {
+    .ig {
+        max-width: 150px;
+        max-height: 150px;
+    }
+    .log
+    {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .logosilueta {
+        width: 80px;
+        height: 80px;
+    }
+    .int {
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    .titulo-rol 
+    {
+        font-size: 30px;
+    }
+    .ig {
+        max-width: 150px;
+        max-height: 150px;
+    }
+    .txt-rol 
+    {
+        font-size: 40px;
+    }
+    .log
+    {
+        width: 180px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .q {
+        width: 40px;
+        height: 40px;
+    }
+    .int {
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    .txt-rol {
+        font-size: 30px;
+    }
+}
+
