@@ -3,15 +3,20 @@ body {
     background-color: #c5d6fb;
 }
 
+.titulo-blog {
+    font-size: 40px;
+    text-align: center;
+}
+
+.banner-blog {
+    background-color: aliceblue;
+    height: 100%;
+}
+
 .containerblog {
     background-color: aqua;
     height: 100vh;
     width: 100vw;
-}
-
-.publi {
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px;
 }
 
 .paddtop2 {
@@ -30,10 +35,6 @@ body {
     border-radius: 15px;
 }
 
-.container h2 {
-    font-size: 35px;
-}
-
 #cuarto2 {
     background: linear-gradient(180deg, #1B3B4E 0%, rgba(36, 35, 39, 1) 100%);
     padding-top: 20px;
@@ -46,4 +47,20 @@ body {
 .Eg-Prbg {
     background: linear-gradient(180deg, #1B3B4E 0%, rgba(36, 35, 39, 1) 100%);
     padding-top: 20px;
+}
+
+.estilodiv {
+    background-color: aqua;
+}
+
+.publicacion {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px 0px 20px 0px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.padd-img {
+    padding: 20px 0px 20px 0px;
 }

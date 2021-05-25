@@ -60,7 +60,7 @@
                 <div class="form-group">
                     <label class="textform" for="inputnomus">Foto De Perfil</label>
                     <input class="form-control" type="file" id="foimg" rows="3"></textarea>
-                    
+
                 </div>
                 <div class="form-group">
                     <label class="textform" for="textarea">Descripcion Personal</label>
@@ -100,59 +100,62 @@
         var fileButton = document.getElementById("foimg");
         var foto;
 
-        fileButton.addEventListener('change', function (e) {
-                    // File or Blob named mountains.jpg
-var file = e.target.files[0];
+        fileButton.addEventListener('change', function(e) {
+            // File or Blob named mountains.jpg
+            var file = e.target.files[0];
 
-// Create the file metadata
-var metadata = {
-  contentType: 'image/jpeg'
-};
+            // Create the file metadata
+            var metadata = {
+                contentType: 'image/jpeg'
+            };
 
-// Upload file and metadata to the object 'images/mountains.jpg'
-var storageRef = firebase.storage().ref('fotos/' + file.name);
-var uploadTask = storageRef.put(file, metadata);
+            // Upload file and metadata to the object 'images/mountains.jpg'
+            var storageRef = firebase.storage().ref('fotos/' + file.name);
+            var uploadTask = storageRef.put(file, metadata);
 
-// Listen for state changes, errors, and completion of the upload.
-uploadTask.on(firebase.storage.TaskEvent.STATE_CHANGED, // or 'state_changed'
-  function(snapshot) {
-    // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
-    var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-    console.log('Upload is ' + progress + '% done');
-    switch (snapshot.state) {
-      case firebase.storage.TaskState.PAUSED: // or 'paused'
-        console.log('Upload is paused');
-        break;
-      case firebase.storage.TaskState.RUNNING: // or 'running'
-        console.log('Upload is running');
-        break;
-    }
-  }, function(error) {
+            // Listen for state changes, errors, and completion of the upload.
+            uploadTask.on(firebase.storage.TaskEvent.STATE_CHANGED, // or 'state_changed'
+                function(snapshot) {
+                    // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
+                    var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                    console.log('Upload is ' + progress + '% done');
+                    switch (snapshot.state) {
+                        case firebase.storage.TaskState.PAUSED: // or 'paused'
+                            console.log('Upload is paused');
+                            break;
+                        case firebase.storage.TaskState.RUNNING: // or 'running'
+                            console.log('Upload is running');
+                            break;
+                    }
+                },
+                function(error) {
 
-  // A full list of error codes is available at
-  // https://firebase.google.com/docs/storage/web/handle-errors
-  switch (error.code) {
-    case 'storage/unauthorized':
-      // User doesn't have permission to access the object
-      break;
+                    // A full list of error codes is available at
+                    // https://firebase.google.com/docs/storage/web/handle-errors
+                    switch (error.code) {
+                        case 'storage/unauthorized':
+                            // User doesn't have permission to access the object
+                            break;
 
-    case 'storage/canceled':
-      // User canceled the upload
-      break;
-    case 'storage/unknown':
-      // Unknown error occurred, inspect error.serverResponse
-      break;
-  }
-}, function() {
-  // Upload completed successfully, now we can get the download URL
-  uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
-    console.log('File available at', downloadURL);
-    foto=downloadURL;
-    console.log('la foto ', foto);
-  });
-});
-            
+                        case 'storage/canceled':
+                            // User canceled the upload
+                            break;
+                        case 'storage/unknown':
+                            // Unknown error occurred, inspect error.serverResponse
+                            break;
+                    }
+                },
+                function() {
+                    // Upload completed successfully, now we can get the download URL
+                    uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
+                        console.log('File available at', downloadURL);
+                        foto = downloadURL;
+                        console.log('la foto ', foto);
+                    });
+                });
+
         });
+
         function datos1() {
             var user = firebase.auth().currentUser;
 
@@ -162,12 +165,12 @@ uploadTask.on(firebase.storage.TaskEvent.STATE_CHANGED, // or 'state_changed'
             var semestre = document.getElementById('semestre').value;
             db.collection(user.email).doc(nombreid).set({
 
-                Apellido: apellido,
-                NombreUS: nombreid,
-                Descripcion: textarea,
-                cargo: "estudiante",
-                año: semestre
-            })
+                    Apellido: apellido,
+                    NombreUS: nombreid,
+                    Descripcion: textarea,
+                    cargo: "estudiante",
+                    año: semestre
+                })
                 .then((docRef) => {
                     console.log("Document written with ID: ", docRef.id);
                 })
@@ -179,12 +182,13 @@ uploadTask.on(firebase.storage.TaskEvent.STATE_CHANGED, // or 'state_changed'
                     // User is signed in, see docs for a list of available properties
                     // https://firebase.google.com/docs/reference/js/firebase.User
                     var uid = user.uid;
-                    document.getElementById('login').innerHTML = `<P>Bienvenido ` + user.email + `<P> <button  class="btn btn-primary rounded-pill" onclick="location.href='index.html'">Go To Home</button>` + `<P> <button  class="btn btn-primary rounded-pill" onclick="location.href='perfil.html'">Mi Perfil</button>` + `<P> <button  class="btn btn-primary rounded-pill" onclick="cerrar()">Cerrar Sesion</button>`;
+                    document.getElementById('login').innerHTML = `<P>Bienvenido ` + user.email + `<P> <button  class="btn btn-primary rounded-pill" onclick="location.href='index.html'">Volver al inicio</button>` + `<P> <button  class="btn btn-primary rounded-pill" onclick="location.href='perfil.html'">Mi Perfil</button>` + `<P> <button  class="btn btn-primary rounded-pill" onclick="cerrar()">Cerrar sesión</button>`;
                 } else {
-                    document.getElementById('login').innerHTML = "No Ha Iniciado Sesion";
+                    document.getElementById('login').innerHTML = "No ha iniciado sesión";
                 }
             });
         }
+
         function actualizar() {
             var user = firebase.auth().currentUser;
             var nameuser = document.getElementById("nombre").value;
@@ -194,9 +198,9 @@ uploadTask.on(firebase.storage.TaskEvent.STATE_CHANGED, // or 'state_changed'
                 displayName: nameuser,
                 photoURL: foto
 
-            }).then(function () {
+            }).then(function() {
                 // Update successful.
-            }).catch(function (error) {
+            }).catch(function(error) {
                 // An error happened.
             });
 
@@ -204,10 +208,10 @@ uploadTask.on(firebase.storage.TaskEvent.STATE_CHANGED, // or 'state_changed'
 
         function cerrar() {
             firebase.auth().signOut()
-                .then(function () {
+                .then(function() {
                     console.log('Salir');
                 })
-                .catch(function (error) {
+                .catch(function(error) {
                     console.log('error');
                 })
         }

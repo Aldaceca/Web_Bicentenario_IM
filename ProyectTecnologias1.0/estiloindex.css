@@ -219,13 +219,13 @@ p {
 .reg {
     color: #0275d8;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .reg:hover {
     color: #ffffff;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .sep {
