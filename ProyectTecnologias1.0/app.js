@@ -34,7 +34,7 @@ var firebaseConfig = {
   
   function createPost(title, imagen,link,autor, content) {
     let div = document.createElement("div");
-    div.setAttribute("class", "col-md-12");
+    div.setAttribute("class", "row col-md-12");
 
 
     let h2 = document.createElement("h2");
