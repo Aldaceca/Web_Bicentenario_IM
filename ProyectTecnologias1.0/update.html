@@ -33,7 +33,7 @@
                         <label class="textform" for="inputnombre">Nombre</label>
                         <input type="text" class="form-control" placeholder="First name" id="nombre">
                     </div>
-                <div class="btn01 d-flex justify-content-around">
+                <div class="btn01 d-flex justify-content-around" id="actualizacion1">
                     <button class="btn btn-primary rounded-pill" onclick="actualizar()">Actualizar</button>
                 </div>
                 <div class="alert alert-primary " role="alert" id="login">
@@ -90,6 +90,7 @@
             }).catch(function(error) {
             // An error happened.
             });
+            document.getElementById('actualizacion1').innerHTML = `<P>Actualizacion Del Nombre Completada`  ;
        }
 
         function cerrar() {
