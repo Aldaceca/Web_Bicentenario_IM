@@ -64,3 +64,106 @@ body {
 .padd-img {
     padding: 20px 0px 20px 0px;
 }
+
+.popblog {
+    width: 83px;
+    height: 83px;
+    position: absolute;
+    left: -2.7%;
+    transition: 0.6s ease-out;
+}
+
+.popblog:hover {
+    transform: translateX(1vw);
+    transition: 0.6s ease-out;
+}
+
+#openmenu:checked~#menu-paneblog {
+    transform: translateX(4.0vw);
+    transition: 0.6s ease-in-out;
+}
+
+#menu-paneblog {
+    background-color: #F0D33B;
+    position: absolute;
+    padding-top: 40px;
+    top: 172px;
+    width: 83px;
+    height: 500px;
+    left: -12.7%;
+    transition: 0.6s ease-in-out;
+    border-radius: 30px;
+}
+
+.atras {
+    opacity: 0%;
+}
+
+@media screen and (max-width: 1440px) {
+    .popblog {
+        left: 0%;
+    }
+    .popblog:hover {
+        transform: translateX(1vw);
+        transition: 0.6s ease-out;
+    }
+    #menu-paneblog {
+        left: -5%;
+    }
+    #openmenu:checked~#menu-paneblog {
+        transform: translateX(100%);
+        transition: 0.6s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .popblog {
+        left: 0%;
+    }
+    .popblog:hover {
+        transform: translateX(1vw);
+        transition: 0.6s ease-out;
+    }
+    #menu-paneblog {
+        left: -7.0%;
+    }
+    #openmenu:checked~#menu-paneblog {
+        transform: translateX(100%);
+        transition: 0.6s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .popblog {
+        left: 0%;
+    }
+    #openmenu:checked~#popblog {
+        transform: translateX(100%);
+        transition: 0.6s ease-in-out;
+    }
+    #menu-paneblog {
+        left: -10%;
+    }
+    #openmenu:checked~#menu-paneblog {
+        transform: translateX(100%);
+        transition: 0.6s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .popblog {
+        left: -9%;
+        opacity: 0%;
+    }
+    #menu-paneblog {
+        left: 0%;
+        opacity: 0%;
+    }
+    #openmenu:checked~#menu-paneblog {
+        transform: translateX(100%);
+        transition: 0.6s ease-in-out;
+    }
+    .atras {
+        opacity: 100%;
+    }
+}

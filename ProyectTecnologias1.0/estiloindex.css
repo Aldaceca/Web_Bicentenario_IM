@@ -410,13 +410,13 @@ h3 {
 
 @media screen and (max-width: 768px) {
     .pop {
-        left: -0.3%;
+        left: -10.7%;
     }
     .pop2 {
         left: 98%;
     }
     #menu-pane {
-        left: -15.0%;
+        left: -12.0%;
     }
     #menu-pane2 {
         left: 160vw;

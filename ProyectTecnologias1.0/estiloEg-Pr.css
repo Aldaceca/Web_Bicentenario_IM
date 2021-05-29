@@ -57,10 +57,8 @@
     transform: scale(1.2);
 }
 
-@media screen and (max-width: 992px) 
-{
-    .NomEgre h2 
-    {
+@media screen and (max-width: 992px) {
+    .NomEgre h2 {
         font-size: 10px;
     }
     .txt-info-egre {
@@ -74,5 +72,126 @@
     .ph2 {
         width: 50px;
         height: 50px;
+    }
+}
+
+.popEg-Pr {
+    width: 83px;
+    height: 83px;
+    position: absolute;
+    left: -2.7%;
+    transition: 0.6s ease-out;
+}
+
+.popEg-Pr:hover {
+    transform: translateX(1vw);
+    transition: 0.6s ease-out;
+}
+
+#openmenu:checked~#menu-paneEg-Pr {
+    transform: translateX(4.0vw);
+    transition: 0.6s ease-in-out;
+}
+
+#menu-paneEg-Pr {
+    background-color: #F0D33B;
+    position: absolute;
+    padding-top: 40px;
+    top: 172px;
+    width: 83px;
+    height: 500px;
+    left: -12.7%;
+    transition: 0.6s ease-in-out;
+    border-radius: 30px;
+}
+
+.atras {
+    opacity: 0%;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 2560px) {
+    .popEg-Pr {
+        left: -1%;
+    }
+    .popEg-Pr:hover {
+        transform: translateX(1vw);
+        transition: 0.6s ease-out;
+    }
+    #menu-paneEg-Pr {
+        left: -4%;
+    }
+    #openmenu:checked~#menu-paneEg-Pr {
+        transform: translateX(100%);
+        transition: 0.6s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .popEg-Pr {
+        left: -1%;
+    }
+    .popEg-Pr:hover {
+        transform: translateX(1vw);
+        transition: 0.6s ease-out;
+    }
+    #menu-paneEg-Pr {
+        left: -6%;
+    }
+    #openmenu:checked~#menu-paneEg-Pr {
+        transform: translateX(100%);
+        transition: 0.6s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .popEg-Pr {
+        left: -1%;
+    }
+    .popEg-Pr:hover {
+        transform: translateX(1vw);
+        transition: 0.6s ease-out;
+    }
+    #menu-paneEg-Pr {
+        left: -8%;
+    }
+    #openmenu:checked~#menu-paneEg-Pr {
+        transform: translateX(100%);
+        transition: 0.6s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .popEg-Pr {
+        left: -2%;
+    }
+    #popEg-Pr:checked~#popblog {
+        transform: translateX(100%);
+        transition: 0.6s ease-in-out;
+    }
+    #menu-paneEg-Pr {
+        left: -11%;
+    }
+    #openmenu:checked~#menu-paneEg-Pr {
+        transform: translateX(100%);
+        transition: 0.6s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .popEg-Pr {
+        left: -9%;
+        opacity: 0%;
+    }
+    #menu-paneEg-Pr {
+        left: 0%;
+        opacity: 0%;
+    }
+    #openmenu:checked~#menu-paneEg-Pr {
+        transform: translateX(100%);
+        transition: 0.6s ease-in-out;
+    }
+    .atras {
+        opacity: 100%;
     }
 }
