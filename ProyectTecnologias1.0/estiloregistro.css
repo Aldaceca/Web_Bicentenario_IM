@@ -68,6 +68,9 @@ a {
     margin: 0 auto;
     padding-top: 100px;
 }
+.di {
+   color: #326A8C;
+}
 
 .log {
     border-top: solid #ffffff 5px;

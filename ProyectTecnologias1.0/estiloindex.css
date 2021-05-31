@@ -75,13 +75,15 @@ p {
     height: 300px;
 }
 
-.flotante1 {
+.flotando{
     position: -webkit-sticky;
     /* Safari */
     position: sticky;
     top: 100px;
     left: 100%;
+    
 }
+
 
 .flotante2 {
     position: -webkit-sticky;
