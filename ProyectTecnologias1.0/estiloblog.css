@@ -97,69 +97,87 @@ body {
 
 .atras {
     opacity: 0%;
+    padding-top: 10px;
 }
 
-@media screen and (max-width: 1440px) {
-    .popblog {
-        left: 0%;
+@media screen and (max-width: 2560px) {
+    .popEg-Pr {
+        left: -1%;
     }
-    .popblog:hover {
+    .popEg-Pr:hover {
         transform: translateX(1vw);
         transition: 0.6s ease-out;
     }
-    #menu-paneblog {
-        left: -5%;
+    #menu-paneEg-Pr {
+        left: -4%;
     }
-    #openmenu:checked~#menu-paneblog {
+    #openmenu:checked~#menu-paneEg-Pr {
+        transform: translateX(100%);
+        transition: 0.6s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .popEg-Pr {
+        left: -1%;
+    }
+    .popEg-Pr:hover {
+        transform: translateX(1vw);
+        transition: 0.6s ease-out;
+    }
+    #menu-paneEg-Pr {
+        left: -6%;
+    }
+    #openmenu:checked~#menu-paneEg-Pr {
         transform: translateX(100%);
         transition: 0.6s ease-in-out;
     }
 }
 
 @media screen and (max-width: 1024px) {
-    .popblog {
-        left: 0%;
+    .popEg-Pr {
+        left: -1%;
     }
-    .popblog:hover {
+    .popEg-Pr:hover {
         transform: translateX(1vw);
         transition: 0.6s ease-out;
     }
-    #menu-paneblog {
-        left: -7.0%;
+    #menu-paneEg-Pr {
+        left: -8%;
     }
-    #openmenu:checked~#menu-paneblog {
+    #openmenu:checked~#menu-paneEg-Pr {
         transform: translateX(100%);
         transition: 0.6s ease-in-out;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .popblog {
-        left: 0%;
+    .popEg-Pr {
+        left: -2%;
     }
-    #openmenu:checked~#popblog {
+    #popEg-Pr:checked~#popblog {
         transform: translateX(100%);
         transition: 0.6s ease-in-out;
     }
-    #menu-paneblog {
-        left: -10%;
+    #menu-paneEg-Pr {
+        left: -11%;
     }
-    #openmenu:checked~#menu-paneblog {
+    #openmenu:checked~#menu-paneEg-Pr {
         transform: translateX(100%);
         transition: 0.6s ease-in-out;
     }
 }
 
 @media screen and (max-width: 425px) {
-    .popblog {
+    .popEg-Pr {
         left: -9%;
         opacity: 0%;
     }
-    #menu-paneblog {
+    #menu-paneEg-Pr {
         left: 0%;
         opacity: 0%;
     }
-    #openmenu:checked~#menu-paneblog {
+    #openmenu:checked~#menu-paneEg-Pr {
         transform: translateX(100%);
         transition: 0.6s ease-in-out;
     }
